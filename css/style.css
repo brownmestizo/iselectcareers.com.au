@@ -56,9 +56,9 @@ body {
 
 .content_right p{
 	font-size: 2em;
-	color: #36740B;
+	color: #B0049F;
 	font-family: 'Fauna One', serif;
-	text-align:right;
+	text-align: right;
 }
 
 .home {
@@ -192,7 +192,7 @@ span.reference a:hover {
 #menu li {
 	width: 200px;
 	margin-right: 5px;
-	padding: 1% 1.5%;
+	padding: 15px ;
 	display: inline;
 }
 
