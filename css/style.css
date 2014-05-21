@@ -1,16 +1,24 @@
 body {
 	background:#FFF;
-	font-family: Calibri, Arial, sans-serif;
-	max-width:1200px;
+	font-family: Calibri, Tahoma, Arial, Sans-serif;
 	font-size:1em;
 }
 
 
 .footer {
+	background-color: #06290C;
+	width: 100%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding: 8px;
+}
+
+.footer p{
 	color: #888888;
 	font-size: 0.75em;
 	text-align: center;
-		
 }
 
 .content_left {
@@ -21,6 +29,7 @@ body {
 
 
 .content_wrap{
+	max-width: 1200px;
 	min-height: 600px;
 	margin-top: 2px;
 }
@@ -29,19 +38,19 @@ body {
 	padding-right: 5px;
 	padding-bottom: 5px;
 	color: #042707;
-	width: 580px;
+	width: 600px;
 	float: left;
 }
 .content_middle p {
 	padding-bottom: 0.2em;
 	font-size: 1.1em;
-	color: #333333;
+	color: #3F3F3F;
 }
 
 .content_right {
 	margin-bottom: 0;
 	padding-bottom: 0;
-	width: 300px;
+	width: 280px;
 	float: right;
 }
 
@@ -109,10 +118,16 @@ h1{
 	font-size: 3em;
 	color: #36740B;
 	font-family: 'Fauna One', serif;
+	margin-top:2px;
 }
 h2 {
 	font-size: 2.2em;
-	color: #161F0F;
+	color: #172E0D;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: #313131;
 }
 span.reference {
 	position:fixed;
