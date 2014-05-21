@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#div2 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.content_left {
+width: 100%;
+}
+#div3 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+
+#menu ul {
+	margin-right:5px;
+}
+
+#menu li {
+	
+	display: inline;
+}
+
+#menu li a {
+   text-decoration:none;
+   display:inline;
+   padding:20px;
+   color:#FFF;
+   font-family: 'Fauna One', serif;
+   font-size:1.2em;
+   line-height:2.5em;
+   text-transform:uppercase;
+}
+
+.one {
+	-moz-box-shadow: 0px 0px 2px #000 inset;
+	-webkit-box-shadow: 0px 0px 2px #04461C;
+	box-shadow: 0px 0px 2px #04461C;
+	background-image: -webkit-linear-gradient(270deg,rgba(0,94,32,1.00) 0%,rgba(59,218,0,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(0,94,32,1.00) 0%,rgba(59,218,0,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(0,94,32,1.00) 0%,rgba(59,218,0,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(0,94,32,1.00) 0%,rgba(59,218,0,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+}
+.two {
+	-moz-box-shadow: 0px 0px 2px #000 inset;
+	-webkit-box-shadow: 0px 0px 2px #04461C;
+	box-shadow: 0px 0px 2px #04461C;
+	background-image: -webkit-linear-gradient(270deg,rgba(167,236,30,1.00) 0%,rgba(74,163,41,1.00) 0.52%,rgba(21,79,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(167,236,30,1.00) 0%,rgba(74,163,41,1.00) 0.52%,rgba(21,79,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(167,236,30,1.00) 0%,rgba(74,163,41,1.00) 0.52%,rgba(21,79,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(167,236,30,1.00) 0%,rgba(74,163,41,1.00) 0.52%,rgba(21,79,0,1.00) 100%);
+}
+.three {
+	-moz-box-shadow: 0px 0px 2px #000 inset;
+	-webkit-box-shadow: 0px 0px 2px #04461C;
+	box-shadow: 0px 0px 2px #04461C;
+	background-image: -webkit-linear-gradient(270deg,rgba(84,247,8,1.00) 0%,rgba(107,236,59,1.00) 0.52%,rgba(38,141,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(84,247,8,1.00) 0%,rgba(107,236,59,1.00) 0.52%,rgba(38,141,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(84,247,8,1.00) 0%,rgba(107,236,59,1.00) 0.52%,rgba(38,141,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(84,247,8,1.00) 0%,rgba(107,236,59,1.00) 0.52%,rgba(38,141,0,1.00) 100%);
+}
+.four {
+	-moz-box-shadow: 0px 0px 2px #000 inset;
+	-webkit-box-shadow: 0px 0px 2px #04461C;
+	box-shadow: 0px 0px 2px #04461C;
+	background-image: -webkit-linear-gradient(270deg,rgba(123,208,11,1.00) 0%,rgba(142,236,106,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(123,208,11,1.00) 0%,rgba(142,236,106,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(123,208,11,1.00) 0%,rgba(142,236,106,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(123,208,11,1.00) 0%,rgba(142,236,106,1.00) 0.52%,rgba(38,142,0,1.00) 100%);
+}
+
+.button_green {
+	text-indent: 0;
+	display: inline-block;
+	float: left;
+	margin: 0 10px 20px 10px;
+	color: #ffffff !important;
+	font-family: 'Fauna One', serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	padding: 0 15px;
+	width:65%;
+	text-decoration: none;
+}
+
+.button_green a {
+	text-decoration: none;
+	color: #FFFFFF;
+	width: 186px;
+}
+.button_green:hover {
+	-moz-box-shadow: 0px 0px 2px #000 inset;
+	-webkit-box-shadow: 0px 0px 2px #04461C;
+	box-shadow: 0px 0px 2px #04461C;
+	background-image: -webkit-linear-gradient(270deg,rgba(5,47,14,1.00) 0%,rgba(10,83,28,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(5,47,14,1.00) 0%,rgba(10,83,28,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(5,47,14,1.00) 0%,rgba(10,83,28,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(5,47,14,1.00) 0%,rgba(10,83,28,1.00) 100%);
+	text-indent: 0;
+}
+
+.footer {
+	background-color:#06471C;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#div2 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.content_left {
+width: 100%;
+}
+#div3 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.footer {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+	width: 75%;
+	margin-left: 1.6949%;
+	clear: none;
+	float: right;
+}
+#div2 {
+	width: 75%;
+	margin-left: 1.6949%;
+	clear: none;
+	float: right;
+}
+.content_left {
+	width: 186px;
+	float: left;
+}
+#div3 {
+width: 83.0508%;
+margin-left: 1.6949%;
+clear: none;
+}
+.footer {
+	text-align: center;
+
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
