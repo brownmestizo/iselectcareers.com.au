@@ -5,7 +5,7 @@
 
 error_reporting(E_ERROR | E_PARSE);
 //ini_set('display_errors', 1);
-include_once ('vendor/stefangabos/zebra_form/Zebra_Form.php');
+include_once ('libs/form/Zebra_Form.php');
 include_once ('model/iselect_modelForm.php');
 
 // instantiate two objects
@@ -30,7 +30,7 @@ $form->clientside_validation(array(
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-        <link rel="stylesheet" href="vendor/stefangabos/zebra_form/public/css/zebra_form.css">
+        <link rel="stylesheet" href="libs/form/public/css/zebra_form.css">
 
         <link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>

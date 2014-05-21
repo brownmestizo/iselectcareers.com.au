@@ -1,0 +1,3 @@
+[submodule "libs/form"]
+	path = libs/form
+	url = git://github.com/stefangabos/Zebra_Form.git
