@@ -1,3 +1,6 @@
 [submodule "libs/form"]
 	path = libs/form
 	url = git://github.com/stefangabos/Zebra_Form.git
+[submodule "libs/phpmailer"]
+	path = libs/phpmailer
+	url = git://github.com/PHPMailer/PHPMailer.git
