@@ -1,4 +1,4 @@
-<body>
+
 
     <div id="menu">
         <a href="index.html"><img src="images/iselect-logo.png" width="186" height="112" alt=""/></a>
@@ -71,9 +71,4 @@
     <div class="footer">
         <p align="center">Copyright 2014 iSelectCareers</p>
     </div>
-
-
-
-
-</body>
 
