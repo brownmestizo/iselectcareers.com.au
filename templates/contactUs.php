@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Submit your resume to iSelect Careers</title>
+        <title>iSelect Careers</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -28,17 +28,18 @@
         </div>
 
         <div class="content_left">
+          <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
             <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
             <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
             <p class="button_green four"><a href="job-board.html">Job board</a></p>
-          <p><img src="images/search.png" align="left" /></p>
+            <p><img src="images/search.png" align="left" /></p>
         </div>
 
 
-        <div class="content_wrap resume">
+        <div class="content_wrap contact">
             <div class="content_middle">
                 <h1>iSelectCareers</h1>
-         		<h2>Submit Resume</h2>
+         		<h2>Contact Us</h2>
 
                 <?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
@@ -62,11 +63,7 @@
                     </div>
 
                     <div class="row">    
-                        <div class="cell"><?php echo $label_fileResume . $fileResume; ?></div>
-                    </div>
-
-                    <div class="row even">    
-                        <div class="cell"><?php echo $label_coverLetter . $coverLetter; ?></div>
+                        <div class="cell"><?php echo $label_message . $message; ?></div>
                     </div>
 
                     <!-- the submit button goes in the last row; also, notice the "last" class which

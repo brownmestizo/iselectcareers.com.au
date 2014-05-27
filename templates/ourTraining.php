@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Submit your resume to iSelect Careers</title>
+        <title>iSelect Careers</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -28,17 +28,21 @@
         </div>
 
         <div class="content_left">
+          <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
             <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
             <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
             <p class="button_green four"><a href="job-board.html">Job board</a></p>
-          <p><img src="images/search.png" align="left" /></p>
+            <p><img src="images/search.png" align="left" /></p>
         </div>
 
 
-        <div class="content_wrap resume">
+        <div class="content_wrap contact">
             <div class="content_middle">
-                <h1>iSelectCareers</h1>
-         		<h2>Submit Resume</h2>
+                <h1>Our Training</h1>
+                <h2>Partnering with RTOs across Australia</h2>
+                <p>At iSelectCareers we partners with  leading RTO's (Registered Training Organisations) and colleges across Australia in  order to provide customised training solution to companies requirements and  needs. </p>
+                <p> Through our network we are able to  assist our clients with the largest range of nationally recognised  qualifications and compliant short courses.</p>
+                <p>Our advisors will review your request  and personally match you with the best option to meet your needs.</p>
 
                 <?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
@@ -54,7 +58,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="cell"><?php echo $label_contactNumber . $contactNumber . $note_contactNumber; ?></div>
+                        <div class="cell"><?php echo $label_mobileNumber . $mobileNumber . $note_mobileNumber; ?></div>
                     </div>
 
                     <div class="row even">    
@@ -62,12 +66,24 @@
                     </div>
 
                     <div class="row">    
-                        <div class="cell"><?php echo $label_fileResume . $fileResume; ?></div>
+                        <div class="cell"><?php echo $label_requireAssistanceJobSearch . $requireAssistanceJobSearch; ?></div>
                     </div>
 
                     <div class="row even">    
-                        <div class="cell"><?php echo $label_coverLetter . $coverLetter; ?></div>
+                        <div class="cell"><?php echo $label_reasonUndertakeStudy . $reasonUndertakeStudy; ?></div>
                     </div>
+
+                    <div class="row">    
+                        <div class="cell"><?php echo $label_typeOfJob . $typeOfJob; ?></div>
+                    </div>
+
+                    <div class="row even">    
+                        <div class="cell"><?php echo $label_coursesInterestedIn . $coursesInterestedIn; ?></div>
+                    </div>
+
+                    <div class="row">    
+                        <div class="cell"><?php echo $label_delivery . $delivery; ?></div>
+                    </div>                    
 
                     <!-- the submit button goes in the last row; also, notice the "last" class which
                     removes the bottom border which is otherwise present for any row -->

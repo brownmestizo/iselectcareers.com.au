@@ -21,6 +21,11 @@
             		'2' => 'No',					
 				);
 
+				$this->delivery = array(
+            		'1' => 'Online',
+            		'2' => 'Classroom',					
+				);				
+
 				$this->state = array(
 					  '8' => 'Australian Capital Territory',
 		              '2' => 'New South Wales',
