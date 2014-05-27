@@ -20,7 +20,7 @@
             <a href="index.html"><img src="images/iselect-logo.png" width="186" height="112" alt=""/></a>
                 <ul>
                     <li class="one"><a href="index.html">Our Expertise</a></li>
-                    <li class="two"><a href="join-us.html">Join Us </a></li>
+                    <li class="two"><a href="join-us.php">Join Us </a></li>
                     <li class="three"><a href="our-training.php">Our Training</a></li>
                     <li class="four"><a href="your-career.html">Your Career</a></li>
                     <li class="two"><a href="contact-us.php">Contact Us</a></li>
@@ -28,6 +28,7 @@
         </div>
 
         <div class="content_left">
+	        <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
             <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
             <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
             <p class="button_green four"><a href="job-board.html">Job board</a></p>
