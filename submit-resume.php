@@ -5,9 +5,9 @@
 
 error_reporting(E_ERROR | E_PARSE);
 //ini_set('display_errors', 1);
-include_once ('libs/form/Zebra_Form.php');
-include_once ('libs/phpmailer/PHPMailerAutoload.php');
-include_once ('model/iselect_modelForm.php');
+require 'libs/form/Zebra_Form.php';
+require 'libs/phpmailer/PHPMailerAutoload.php';
+require 'model/iselect_modelForm.php';
 
 // instantiate two objects
 $form = new Zebra_Form('form');
