@@ -1,12 +1,14 @@
 <?php
 
   // send mail to
-  $to = "info@iselectcareers.com.au, luella@aot.edu.au";
+ // $to = "info@iselectcareers.com.au";
+  $to = "emily@rawpixel.com.au";
   
   //*** Uniqid Session ***//
   $strSid = md5(uniqid(time()));
   
   //form data
+  $commenttype = $_POST["commenttype"];
   $contactmethod = $_POST["contactmethod"];
   $email = $_POST["emailaddress"];
   $firstname = $_POST["firstname"];
@@ -14,7 +16,14 @@
   $phone = $_POST["phone"];
   $state = $_POST["state"];
   $fullname = $firstname." ".$lastname;
+  $rto = $_POST['rto'];
   
+  $studentno = $_POST["studentno"];
+  if ($studentno == "")
+  {
+	  $studentno = "Unsure";
+  }
+  $address = $_POST["address"] . "<br />" . $_POST["towncity"] . ", " . $_POST["postcode"];
   $comment = $_POST["comment"];
   
   // subject
@@ -28,7 +37,6 @@
 	$message .= "<tr style='background: #eee;'><td><strong>Student name:</strong> </td><td>" . $fullname . "</td></tr>";
 	$message .= "<tr><td><strong>Email:</strong> </td><td>" . $email . "</td></tr>";
 	$message .= "<tr><td><strong>Mobile number:</strong> </td><td>" . $phone . "</td></tr>";
-	$message .= "<tr><td><strong>State:</strong> </td><td>" . $state . "</td></tr>";
 	$message .= "<tr><td><strong>Message:</strong> </td><td>" . $comment . "</td></tr>";
 	$message .= "</table>";
 	$message .= "</body></html>";

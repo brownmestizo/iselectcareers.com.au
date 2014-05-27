@@ -7,18 +7,22 @@
   $strSid = md5(uniqid(time()));
   
   //form data
+  $commenttype = $_POST["commenttype"];
   $contactmethod = $_POST["contactmethod"];
   $email = $_POST["emailaddress"];
   $firstname = $_POST["firstname"];
   $lastname = $_POST["lastname"];
   $phone = $_POST["phone"];
   $state = $_POST["state"];
+  $studyreason = $_POST["studyreason"];
+  $deliverymode = $_POST["deliverymode"];
+  $requireassistance = $_POST["requireassistance"];
+  $formname = $_POST["formname"];
+  $subject = $_POST["formname"];
+  $courseinterest = $_POST["courseinterest"];
   $fullname = $firstname." ".$lastname;
   
-  $comment = $_POST["comment"];
-  
   // subject
-  $subject = "Contact form - iSelectCareers";
   
   // create message
   
@@ -29,7 +33,10 @@
 	$message .= "<tr><td><strong>Email:</strong> </td><td>" . $email . "</td></tr>";
 	$message .= "<tr><td><strong>Mobile number:</strong> </td><td>" . $phone . "</td></tr>";
 	$message .= "<tr><td><strong>State:</strong> </td><td>" . $state . "</td></tr>";
-	$message .= "<tr><td><strong>Message:</strong> </td><td>" . $comment . "</td></tr>";
+	$message .= "<tr><td><strong>Study reason:</strong> </td><td>" . $studyreason . "</td></tr>";
+	$message .= "<tr><td><strong>Delivery mode:</strong> </td><td>" . $deliverymode . "</td></tr>";
+	$message .= "<tr><td><strong>Require assistance:</strong> </td><td>" . $requireassistance . "</td></tr>";
+	$message .= "<tr><td><strong>Course interest:</strong> </td><td>" . $courseinterest . "</td></tr>";
 	$message .= "</table>";
 	$message .= "</body></html>";
   	
@@ -60,9 +67,9 @@
 	//AUTO REPLY		
 	//$from = 'From:' .$email;	
   	$messagetostudent  = '<html><body>';
-	$messagetostudent .=  "<p>Thank you for your submission.</p>";
+	$messagetostudent .=  "<p>Thank you! Your email has been received</p>";	
+	$messagetostudent .=  "<p>We will contact you shortly.</p>";	
 	$messagetostudent .=  "<p>This is an automatic email, please do not reply to this message.</p>";
-	$messagetostudent .=  "<p>We will contact you very soon.</p>";	
 	$messagetostudent .= "</body></html>";
 		
     $headerstudent = "From: No Reply <noreply@iselectcareers.com.au> \r\n" . "X-Mailer: PHP/" . phpversion();

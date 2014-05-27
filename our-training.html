@@ -28,8 +28,8 @@
   </ul>
 </div>
 <div class="content_left">
+  <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
   <p class="button_green one"><a href="submit-resume.html">Submit resume</a></p>
-  <p>&nbsp;</p>
   <p class="button_green two">Job alerts</p>
   <p class="button_green four">Job board</p>
   <img src="images/search.png" align="left" /></p>
@@ -40,18 +40,63 @@
     <h2>Partnering with RTOs across Australia</h2>
     <p>At iSelectCareers we partners with  leading RTO's (Registered Training Organisations) and colleges across Australia in  order to provide customised training solution to companies requirements and  needs. </p>
     <p> Through our network we are able to  assist our clients with the largest range of nationally recognised  qualifications and compliant short courses.      </p>
-    <!--<p>inquires form<br />
-      name<br />
-      phone <br />
-      email address<br />
-      address<br />
-      course you are interested in.<br />
-      Delivery mode online class room<br />
-      Reason for wanting to undertake  additional study?<br />
-      type of job\work you would like to  obtain after completing your studies?<br />
-      Do you require assistance with your  jobsearching?</p>-->
-    <p>Our advisors will review your request  and personally match you with the best option to meet your needs.</p>
-<p><img src="images/trio.png" width="580" height="112"/></p>
+   <p>Our advisors will review your request  and personally match you with the best option to meet your needs.</p>
+    <form id="theForm" method="post" action="join.php" onsubmit="return validate_form();" enctype="multipart/form-data">
+    <input name="formname" type="hidden" value="Our training - iSelectCareers website" />
+      <table border="0" cellspacing="5" cellpadding="0" >
+        <tr>
+          <td><p>First name:</p></td>
+          <td><input type="text" name="firstname" id="firstname" title="Please enter your first name" value="" /></td>
+          <td><p>Last name:</p></td>
+          <td><input type="text" name="lastname" id="lastname" title="Please enter your last name" value="" /></td>
+        </tr>
+        <tr>
+          <td><p>Mobile number:</p></td>
+          <td><input type="text" name="phone" id="phone" title="Please enter your telephone number (must be at least 10 digits)" value="" /></td>
+          <td><p>Email address:</p></td>
+          <td><input type="text" name="emailaddress" id="emailaddress" title="Email address" value="" /></td>
+        </tr>
+        <tr>
+        <td ><p>Your state:</p></td>
+        <td><select name="state"  id="state" title="Please select a state">
+          <option value="">Please select a state</option>
+          <option>NSW</option>
+          <option>QLD</option>
+          <option>VIC</option>
+          <option>SA</option>
+          <option>WA</option>
+          <option>NT</option>
+          <option>TAS</option>
+          <option>ACT</option>
+        </select></td>
+        <td><p>Do you require assistance with your  jobsearching?</p></td>
+        <td><select name="requireassistance" id="requireassistance"/>
+        
+          <option value="Select">Please select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option></td>
+      </tr>
+        <tr>
+          <td><p>Your reason for wanting to undertake  additional study:</p></td>
+          <td><textarea name="studyreason" rows="3" id="studyreason" title="Your reason for wanting to undertake additional study"></textarea></td>
+          <td><p>The type of job you would like to  obtain after completing your studies:</p></td>
+          <td><textarea name="job" rows="3" id="job" title="The type of job you would like to  obtain after completing your studies"></textarea></td>
+        </tr>
+        <tr>
+          <td><p>Preferred delivery mode:</p></td>
+          <td><select name="deliverymode" id="deliverymode">
+              <option value="Select">Please select</option>
+              <option value="Online">Online</option>
+              <option value="Classroom">Classroom</option>
+            </select></td>
+          <td><p>Course/s you are interested in:</p></td>
+          <td><textarea name="courseinterest" rows="3" id="courseinterest" title="Courses you are interested in"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3"><input name="submit" id="submit" type="submit" value="Submit"  class="submit" align="right" /></td>
+        </tr>
+      </table>
+    </form>
     <p>&nbsp;</p>
   </div>
   <div class="content_right">

@@ -12,7 +12,7 @@
     </div>
 
     <div class="content_left">
-        <p class="button_green one"><a href="submit-resume.html">Submit resume</a></p>
+        <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
         <p class="button_green two">Job alerts</p>
         <p class="button_green four">Job board</p>
       <p><img src="images/search.png" align="left" /></p>
@@ -21,6 +21,8 @@
 
     <div class="content_wrap resume">
         <div class="content_middle">
+            <h1>iSelectCareers</h1>
+     		<h2>Submit Resume</h2>
 
             <?php
                 echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));

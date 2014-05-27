@@ -7,29 +7,56 @@
   $strSid = md5(uniqid(time()));
   
   //form data
+  $commenttype = $_POST["commenttype"];
   $contactmethod = $_POST["contactmethod"];
   $email = $_POST["emailaddress"];
   $firstname = $_POST["firstname"];
   $lastname = $_POST["lastname"];
   $phone = $_POST["phone"];
   $state = $_POST["state"];
+  $studyreason = $_POST["studyreason"];
+  $deliverymode = $_POST["deliverymode"];
+  $requireassistance = $_POST["requireassistance"];
+  $formname = $_POST["formname"];
+  $subject = $_POST["formname"];
+  $courseinterest = $_POST["courseinterest"];
+  
+  $currentindustry = $_POST["currentindustry"];
+  $desiredindustry = $_POST["desiredindustry"];
+  $howhear = $_POST["howhear"];
+  $jobdifficulty = $_POST["jobdifficulty"];
+  $usingrecruitment = $_POST["usingrecruitment"];
+  $assistance = $_POST["assistance"];
+  $resume = $_POST["resume"];
+  $havevisa = $_POST["havevisa"];
+  $visatype = $_POST["visatype"];
+  $howlongbeen = $_POST["howlongbeen"];
+  $staylength = $_POST["staylength"];
+
   $fullname = $firstname." ".$lastname;
   
-  $comment = $_POST["comment"];
-  
   // subject
-  $subject = "Contact form - iSelectCareers";
   
   // create message
   
   	$message  = '<html><body>';
-	$message .=  "<p>This email has been sent using the iSelectCareers contact form. </p>";
+	$message .=  "<p>This email has been sent using the iSelectCareers contact form </p>";
 	$message .= '<table border rules="all" style="border-color: #666; border-collapse: collapse;" cellpadding="10">';
 	$message .= "<tr style='background: #eee;'><td><strong>Student name:</strong> </td><td>" . $fullname . "</td></tr>";
 	$message .= "<tr><td><strong>Email:</strong> </td><td>" . $email . "</td></tr>";
 	$message .= "<tr><td><strong>Mobile number:</strong> </td><td>" . $phone . "</td></tr>";
 	$message .= "<tr><td><strong>State:</strong> </td><td>" . $state . "</td></tr>";
-	$message .= "<tr><td><strong>Message:</strong> </td><td>" . $comment . "</td></tr>";
+	$message .= "<tr><td><strong>What is your current industry/profession:</strong> </td><td>" . $currentindustry . "</td></tr>";
+	$message .= "<tr><td><strong>What is your desired industry/profession:</strong> </td><td>" . $desiredindustry . "</td></tr>";
+	$message .= "<tr><td><strong>How did you hear about us:</strong> </td><td>" . $howhear . "</td></tr>";
+	$message .= "<tr><td><strong>Are you have difficulty getting a job:</strong> </td><td>" . $jobdifficulty . "</td></tr>";
+	$message .= "<tr><td><strong>Have you or are you using job recruitment companies to assist in finding you a job:</strong> </td><td>" . $usingrecruitment . "</td></tr>";
+	$message .= "<tr><td><strong>What assistance has  been provided, and are your expectations being met:</strong> </td><td>" . $assistance . "</td></tr>";
+	$message .= "<tr><td><strong>Do you have a target resume for each position  you are applying for?:</strong> </td><td>" . $resume . "</td></tr>";
+	$message .= "<tr><td><strong>Do you have Australian work permit visa:</strong> </td><td>" . $havevisa . "</td></tr>";
+	$message .= "<tr><td><strong>What type of visa did you entered Australia with:</strong> </td><td>" . $visatype . "</td></tr>";
+	$message .= "<tr><td><strong>How long have you been in Australia:</strong> </td><td>" . $howlongbeen . "</td></tr>";
+	$message .= "<tr><td><strong>Estimated length of stay in Australia:</strong> </td><td>" . $staylength . "</td></tr>";
 	$message .= "</table>";
 	$message .= "</body></html>";
   	
@@ -60,9 +87,9 @@
 	//AUTO REPLY		
 	//$from = 'From:' .$email;	
   	$messagetostudent  = '<html><body>';
-	$messagetostudent .=  "<p>Thank you for your submission.</p>";
+	$messagetostudent .=  "<p>Thank you! Your email has been received</p>";	
+	$messagetostudent .=  "<p>We will contact you shortly.</p>";	
 	$messagetostudent .=  "<p>This is an automatic email, please do not reply to this message.</p>";
-	$messagetostudent .=  "<p>We will contact you very soon.</p>";	
 	$messagetostudent .= "</body></html>";
 		
     $headerstudent = "From: No Reply <noreply@iselectcareers.com.au> \r\n" . "X-Mailer: PHP/" . phpversion();

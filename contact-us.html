@@ -32,6 +32,7 @@
 </div>
 
 <div class="content_left">
+  <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
     <p class="button_green one"><a href="submit-resume.html">Submit resume</a></p>
     <p class="button_green two">Job alerts</p>
     <p class="button_green four">Job board</p>
@@ -41,8 +42,8 @@
 <div class="content_middle">
     <h1>iSelectCareers</h1>
     <h2>Contact us</h2>
-    <form method="post" action="contact.php" onsubmit="return validate_form();" enctype="multipart/form-data">
-    <table width="700" border="0" cellspacing="5" cellpadding="0"  class="contact_form">
+    <form id="theForm" method="post"  action="contact.php" onsubmit="return validate_form();" enctype="multipart/form-data">
+    <table border="0" width="640" cellspacing="5" cellpadding="0">
       <tr>
         <td><p>First name:</p></td>
         <td><input type="text" name="firstname" id="firstname" title="Please enter your first name" value="" /></td>
@@ -55,9 +56,23 @@
         <td><p>Email address:</p></td>
         <td><input type="text" name="emailaddress" id="emailaddress" title="Email address" value="" /></td>
       </tr>
+       <tr>
+        <td ><p>State:</p></td>
+        <td colspan="3"><select name="state"  id="state" title="Please select a state">
+          <option value="">Please select a state</option>
+          <option>NSW</option>
+          <option>QLD</option>
+          <option>VIC</option>
+          <option>SA</option>
+          <option>WA</option>
+          <option>NT</option>
+          <option>TAS</option>
+          <option>ACT</option>
+        </select></td>
+      </tr>
       <tr>
         <td colspan="4"><p>Your message:</p>
-          <textarea name="comment" title="Please enter your message." cols="80" rows="10"></textarea>
+          <textarea name="comment" title="Please enter your message." cols="70" rows="5"></textarea>
           <p align="center">
             <input name="submit" id="submit" type="submit" value="Submit" class="submit"//>
           </p></td>
@@ -73,6 +88,7 @@
   <p align="center">Copyright 2014 iSelectCareers</p></div>
 
 
+<div id='laPlaceholder'></div> 
 <script type="text/javascript"> 
 (function(d,t) { 
 var script = d.createElement(t); script.id = 'la_x2s6df8d'; script.async = true; 
