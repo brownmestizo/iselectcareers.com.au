@@ -13,8 +13,8 @@
 
     <div class="content_left">
         <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
-        <p class="button_green two">Job alerts</p>
-        <p class="button_green four">Job board</p>
+        <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
+        <p class="button_green four"><a href="job-board.html">Job board</a></p>
       <p><img src="images/search.png" align="left" /></p>
     </div>
 
