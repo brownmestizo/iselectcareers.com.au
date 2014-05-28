@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Submit your resume to iSelect Careers</title>
+        <title>Join us - iSelect Careers</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -28,18 +28,21 @@
         </div>
 
         <div class="content_left">
-	        <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
+          <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
             <p class="button_green one"><a href="submit-resume.php">Submit resume</a></p>
             <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
             <p class="button_green four"><a href="job-board.html">Job board</a></p>
-          <p><img src="images/search.png" align="left" /></p>
+            <p><img src="images/search.png" align="left" /></p>
         </div>
 
 
-        <div class="content_wrap resume">
+        <div class="content_wrap join">
             <div class="content_middle">
-                <h1>iSelectCareers</h1>
-         		<h2>Submit Resume</h2>
+                <h1>Join us</h1>
+                <h2>How we help?</h2>
+                <p>We give you access to proven strategies by working in partnership with our Career Coaches to assist you by putting you on top of the competition to achieve your desired career goals. Everyone has different needs and time constraint so we are very flexible in our approach and can provide you with full solutions or targeted career plan for your specific requirements.</p>
+                <p>As our strategies are very personalised we have to limit the numbers of people that the Career Coaches work with.  </p>
+                <p>Please complete the following form:</p>
 
                 <?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
@@ -55,7 +58,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="cell"><?php echo $label_contactNumber . $contactNumber . $note_contactNumber; ?></div>
+                        <div class="cell"><?php echo $label_mobileNumber . $mobileNumber . $note_mobileNumber; ?></div>
                     </div>
 
                     <div class="row even">    
@@ -63,12 +66,24 @@
                     </div>
 
                     <div class="row">    
-                        <div class="cell"><?php echo $label_fileResume . $fileResume; ?></div>
+                        <div class="cell"><?php echo $label_requireAssistanceJobSearch . $requireAssistanceJobSearch; ?></div>
                     </div>
 
                     <div class="row even">    
-                        <div class="cell"><?php echo $label_coverLetter . $coverLetter; ?></div>
+                        <div class="cell"><?php echo $label_reasonUndertakeStudy . $reasonUndertakeStudy; ?></div>
                     </div>
+
+                    <div class="row">    
+                        <div class="cell"><?php echo $label_typeOfJob . $typeOfJob; ?></div>
+                    </div>
+
+                    <div class="row even">    
+                        <div class="cell"><?php echo $label_coursesInterestedIn . $coursesInterestedIn; ?></div>
+                    </div>
+
+                    <div class="row">    
+                        <div class="cell"><?php echo $label_delivery . $delivery; ?></div>
+                    </div>                    
 
                     <!-- the submit button goes in the last row; also, notice the "last" class which
                     removes the bottom border which is otherwise present for any row -->
@@ -77,7 +92,7 @@
 
 
             <div class="content_right">
-              <p>iSelectCareers Will Help You Find Your Dream Job
+              <p>Come and join iSelectCareers</p>
             </div>
         </div>
 

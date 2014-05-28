@@ -1,6 +1,6 @@
 <?php 
     /* iselectcareers.com.au */
-    /* May 16, 2014 */
+    /* May 27, 2014 */
     /* brownmestizo@gmail.com */
 
     error_reporting(E_ERROR | E_PARSE);
@@ -49,15 +49,15 @@
     //***************************************************************
     //***************************************************************
 
-    // Contact Number
-    $form->add('label', 'label_contactNumber', 'contactNumber', 'Contact Number');
-    $obj = $form->add('text', 'contactNumber','', array('data-prefix' => '(+61)'));
+    // Mobile Number
+    $form->add('label', 'label_mobileNumber', 'mobileNumber', 'Mobile Number');
+    $obj = $form->add('text', 'mobileNumber','', array('data-prefix' => '(+61)'));
     $obj->set_rule(array(
         'required'  => array('error', 'Contact number is required.'),
         'length'    => array(8, 10, 'error', 'Must contain between 8 and 10 digits!'),
         'digits'    => array('', 'error', 'Should only include numbers and no special characters.')
     ));
-    $form->add('note', 'note_contactNumber', 'contactNumber', 'Accepts only numbers and no special characters.');
+    $form->add('note', 'note_mobileNumber', 'mobileNumber', 'Accepts only numbers and no special characters.');
 
     // State
     $form->add('label', 'label_state', 'state', 'State');
@@ -67,25 +67,44 @@
         'required' => array('error', 'State is required.')
     ));
 
-    // Resume
-    $form->add('label', 'label_fileResume', 'fileResume', 'Upload Resume');
-    $obj = $form->add('file', 'fileResume');
+    // Do you require assistance with your job searching?
+    $form->add('label', 'label_requireAssistanceJobSearch', 'requireAssistanceJobSearch', 'Do you require assistance with your job searching?');
+    $obj = $form->add('select', 'requireAssistanceJobSearch', '', '');
+    $obj->add_options($submitResumeForm->yesNo);
     $obj->set_rule(array(
-        'required'  =>  array('error', 'PDFs are the best formats for your resumes.'),
-        'upload'    =>  array('tmp', ZEBRA_FORM_UPLOAD_RANDOM_NAMES, 'error', 'Could not upload file!<br>Check that the "tmp" folder exists inside the "examples" folder and that it is writable'),
-        'filetype'  =>  array('pdf', 'error', 'File must be a PDF document.'),
-        'filesize'  =>  array(102400, 'error', 'File size must not exceed 100Kb!'),
+        'required' => array('error', 'State is required.')
+    ));    
+
+    // Your reason for wanting to undertake additional study
+    $form->add('label', 'label_reasonUndertakeStudy', 'reasonUndertakeStudy', 'Your reason for wanting to undertake additional study');
+    $obj = $form->add('textarea', 'reasonUndertakeStudy');
+    $obj->set_rule(array(
+        'required'  => array('error', 'Your reason to undertake study is needed.'),        
+        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
     ));
 
-    // attach a note
-    $form->add('note', 'note_file', 'file', 'File must have the .pdf extension and no more than 100Kb.');
-
-    // Cover Letter
-    $form->add('label', 'label_coverLetter', 'coverLetter', 'Cover Letter');
-    $obj = $form->add('textarea', 'coverLetter');
+    // The type of job you would like to obtain after completing your studies
+    $form->add('label', 'label_typeOfJob', 'typeOfJob', 'The type of job you would like to obtain after completing your studies');
+    $obj = $form->add('textarea', 'typeOfJob');
     $obj->set_rule(array(
-        'required'  => array('error', 'Cover Letter is required.'),
-        'length'    => array(500, 0, 'error', 'Minimum length is 500 characters!', true),
+        'required'  => array('error', 'The type of job you like to obtain after your studies is needed.'),        
+        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
+    ));    
+
+    // Course/s you are interested in 
+    $form->add('label', 'label_coursesInterestedIn', 'coursesInterestedIn', 'Course/s you are interested in ');
+    $obj = $form->add('textarea', 'coursesInterestedIn');
+    $obj->set_rule(array(
+        'required'  => array('error', 'Your list of interested courses is needed.'),        
+        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
+    ));        
+
+    // Preferred mode of delivery
+    $form->add('label', 'label_delivery', 'delivery', 'Preferred mode of delivery');
+    $obj = $form->add('select', 'delivery', '', '');
+    $obj->add_options($submitResumeForm->delivery);
+    $obj->set_rule(array(
+        'required' => array('error', 'Preferred mode of delivery is required.')
     ));
 
     // Submit button
@@ -93,39 +112,7 @@
 
     // Validate the form
     if ($form->validate()) {
-        /*
-        $mail = new PHPMailer;
-
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'user@example.com';                 // SMTP username
-        $mail->Password = 'secret';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
-
-        $mail->From = 'from@example.com';
-        $mail->FromName = 'Mailer';
-        $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-        $mail->addAddress('ellen@example.com');               // Name is optional
-        $mail->addReplyTo('info@example.com', 'Information');
-
-        $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
-        $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-        $mail->Subject = 'Resume Submission';
-        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-        if(!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-        } else {
-            echo 'Message has been sent';
-        }
-        */
     } else
-        $form->render('templates/submitResume.php');
+        $form->render('templates/ourTraining.php');
 
     ?>        
