@@ -36,7 +36,7 @@
         </div>
 
 
-        <div class="content_wrap contact">
+        <div class="content_wrap training">
             <div class="content_middle">
                 <h1>Our Training</h1>
                 <h2>Partnering with RTOs across Australia</h2>
