@@ -80,7 +80,7 @@
     // Validate the form
     if ($form->validate()) {
         
-          $to = "emily@rawpixel.com.au, brownmestizo@gmail.com";
+          $to = "brownmestizo@gmail.com";
           
           //*** Uniqid Session ***//
           $strSid = md5(uniqid(time()));
