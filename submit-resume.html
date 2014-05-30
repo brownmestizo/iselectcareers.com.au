@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-<title>Job Board - iSelect Careers</title>
+<title>Submit your resume to iSelect Careers</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
 <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
@@ -39,8 +39,49 @@
 <div class="content_wrap resume">
 <div class="content_middle">
     <h1>iSelectCareers</h1>
-    <h2>Job Board</h2>
-    <p>This feature is coming soon!</p>
+    <h2>Submit Resume </h2>
+    <form id="theForm"  method="post" action="submit-resume.php" onsubmit="return validate_form();" enctype="multipart/form-data">
+    <table width="650" border="0" cellspacing="5" cellpadding="0" >
+      <tr>
+        <td><p>First name:</p></td>
+        <td><input type="text" name="firstname" id="firstname" title="Please enter your first name" value="" /></td>
+        <td><p>Last name:</p></td>
+        <td><input type="text" name="lastname" id="lastname" title="Please enter your last name" value="" /></td>
+      </tr>
+      <tr>
+        <td><p>Mobile number:</p></td>
+        <td><input type="text" name="phone" id="phone" title="Please enter your telephone number (must be at least 10 digits)" value="" /></td>
+        <td><p>Email address:</p></td>
+        <td><input type="text" name="emailaddress" id="emailaddress" title="Email address" value="" /></td>
+      </tr>
+      <tr>
+        <td><p>Attach resume*:</p></td>
+        <td><input type="file" title="Please select a file for attachment" id="formfileattachment" name="formfileattachment" /></td>
+        <td><p>State:</p></td>
+        <td><select name="state"  id="state" title="Please select a state">
+          <option value="">Please select a state</option>
+          <option>NSW</option>
+          <option>QLD</option>
+          <option>VIC</option>
+          <option>SA</option>
+          <option>WA</option>
+          <option>NT</option>
+          <option>TAS</option>
+          <option>ACT</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td colspan="4"><p>Cover letter:</p>
+          <textarea name="comment" title="Please enter your message." cols="80" rows="5"></textarea>
+          <p align="center">
+            <input name="submit" id="submit" type="submit" value="Submit"  class="submit"/>
+          </p></td>
+      </tr>
+    </table>
+  </form>
+  <p>* If you would like to upload more than one file you will need to <a href="http://windows.microsoft.com/en-au/windows-vista/compress-and-uncompress-files-zip-files" target="_blank">zip (compress)</a> all your files  together into one zipped folder prior to attaching.</p>
+
+</div>
 </div>
 <div class="clear"></div>
 <div class="footer">

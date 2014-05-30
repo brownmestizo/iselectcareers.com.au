@@ -4,20 +4,20 @@ body {
 	font-size:1em;
 }
 .alt { background:#FFFFCC;}
-	
 
 .footer {
 	width: 100%;
-	position:absolute;
-	bottom: -160px;
+	bottom: 0px;
 	left:0px;
-	height: 50px;
+	height: 40px;
 	background: #65DF57;
+	position:fixed;
+	margin-top:20px;
 }
 
 .footer p{
 	color: #FFFFFF;
-	font-size: 0.75em;
+	font-size: 12px;
 	text-align: center;
 }
 
@@ -34,6 +34,7 @@ body {
 	position:absolute;
 	top:120px;
 	left:250px;
+	padding-bottom:70px;
 }
 
 .content_middle {
@@ -67,7 +68,7 @@ body {
 }
 
 .resume {
-	background: url(../images/resume.gif) top right no-repeat;
+	background: url(../images/resume.jpg) top right no-repeat;
 }
 
 .join {
@@ -261,14 +262,13 @@ span.reference a:hover {
     background: #FFFFDD;
     border: 1px solid #CCCCCC;
     color: #000000;
-    font-size: 14px;
     overflow: auto;
 }
 
 #theForm input[type="text"], #theForm input[type="email"], #theForm input[type="file"] {
 	margin-bottom: 10px;
 	overflow: hidden;
-	width: 160px;
+	width: 180px;
 }
 
 #theForm textarea {
