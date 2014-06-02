@@ -4,21 +4,20 @@ body {
 	font-size:1em;
 }
 .alt { background:#FFFFCC;}
-	
 
 .footer {
-	background-color: #06290C;
 	width: 100%;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0;
-	padding: 8px;
+	bottom: 0px;
+	left:0px;
+	height: 40px;
+	background: #65DF57;
+	position:fixed;
+	margin-top:20px;
 }
 
 .footer p{
-	color: #888888;
-	font-size: 0.75em;
+	color: #FFFFFF;
+	font-size: 12px;
 	text-align: center;
 }
 
@@ -28,19 +27,21 @@ body {
 	margin-top: 20px;
 }
 
-
 .content_wrap{
-	max-width: 1200px;
-	min-height: 600px;
-	margin-top: 2px;
+	width: 1000px;
+	min-height: 700px;
+	float: left;
+	position:absolute;
+	top:120px;
+	left:250px;
+	padding-bottom:70px;
 }
 
 .content_middle {
 	padding-right: 5px;
 	padding-bottom: 5px;
 	color: #042707;
-	width: 640px;
-	float: left;
+	width: 65%;
 }
 .content_middle p {
 	padding-bottom: 0.2em;
@@ -63,25 +64,25 @@ body {
 }
 
 .home {
-	background: url(../images/extra.gif) bottom right no-repeat;
+	background: url(../images/index.jpg) top right no-repeat;
 }
 
 .resume {
-	background: url(../images/resume.gif) bottom right no-repeat;
+	background: url(../images/resume.jpg) top right no-repeat;
 }
 
 .join {
-	background: url(../images/join.gif) bottom right no-repeat;
+	background: url(../images/join.jpg) top right no-repeat;
 }
 .career {
-	background: url(../images/career.gif) bottom right no-repeat;
+	background: url(../images/career.jpg) top right no-repeat;
 }
 .training {
-	background: url(../images/training.gif) bottom right no-repeat;
+	background: url(../images/training.jpg) top right no-repeat;
 }
 
 .contact {
-	background: url(../images/contact.gif) bottom right no-repeat;
+	background: url(../images/contact.jpg) top right no-repeat;
 }
 .thanks {
 	background: url(../images/thanks.gif) bottom right no-repeat;
@@ -108,7 +109,7 @@ h2 {
 
 h3 {
 	font-size: 1.5em;
-	color: #313131;
+	color: #65DF57;
 }
 span.reference {
 	position:fixed;
@@ -175,6 +176,7 @@ span.reference a:hover {
 	padding-right: 10px;
 	padding-left: 10px;
 	height: 120px;
+	width: 1000px;
 }
 
 #menu ul {
@@ -253,21 +255,20 @@ span.reference a:hover {
 #theForm {
 	    border: 1px solid #CCCCCC;
 		border-collapse:collapse;
-		margin:10px;
-		}
+		padding:10px;
+}
 
 #theForm input, #theForm textarea {
     background: #FFFFDD;
     border: 1px solid #CCCCCC;
     color: #000000;
-    font-size: 14px;
     overflow: auto;
 }
 
 #theForm input[type="text"], #theForm input[type="email"], #theForm input[type="file"] {
 	margin-bottom: 10px;
 	overflow: hidden;
-	width: 160px;
+	width: 180px;
 }
 
 #theForm textarea {
