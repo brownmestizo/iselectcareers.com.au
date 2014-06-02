@@ -301,3 +301,8 @@ span.reference a:hover {
     background: none repeat scroll 0 0 #006633;
     color: #FFFFFF;
 }
+
+
+.Zebra_Form .optional {
+	display: none;
+}

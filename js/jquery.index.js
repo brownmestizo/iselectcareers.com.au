@@ -1,5 +1,3 @@
-/* jquerydemo.com */
-
 $(document).ready(function() {
 
   $('#menu li').hover(function() {

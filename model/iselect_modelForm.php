@@ -13,6 +13,18 @@
 
 	}
 
+	class yourCareerFormQuestions {
+		public $questions = array (
+			1 => 'Q1. What is your current industry/profession?',
+			2 => 'Q2. What is your desired industry/profession?',
+			3 => 'Q3. How did you hear about us?',			
+			4 => 'Q4. Are you have difficulty getting a job?',
+			5 => 'Q5. Have you or are you using job recruitment companies to assist in finding you a job?',
+			6 => 'What assistance has been provided, and are your expectations being met?',
+			7 => 'Do you have a target resume for each position you are applying for?'
+		);
+	}
+
 	class iselectForm extends Form {
 
 			var $sendToPrimary = array ("person"=>'Emily Knox', "email"=>'emily@rawpixel.com.au');
@@ -284,6 +296,9 @@
 						break;
 					case 'joinUs':
 						$subject = 'Join Us Form';
+						break;
+					case 'yourCareer':
+						$subject = 'Your Career Form';
 						break;
 				}
 
