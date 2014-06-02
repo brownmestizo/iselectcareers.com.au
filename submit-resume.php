@@ -1,12 +1,11 @@
-<?php 
+<?php
     /* iselectcareers.com.au */
     /* May 16, 2014 */
     /* brownmestizo@gmail.com */
 
-    error_reporting(E_ERROR | E_PARSE);
-    //ini_set('display_errors', 1);
+    //error_reporting(E_ERROR | E_PARSE);
+    ini_set('display_errors', 1);
     require 'libs/form/Zebra_Form.php';
-    require 'libs/phpmailer/PHPMailerAutoload.php';
     require 'model/iselect_modelForm.php';
 
     // instantiate two objects
@@ -32,7 +31,7 @@
     // Last Name
     $form->add('label', 'label_lastName', 'lastName', 'Last Name');
     $obj = $form->add('text', 'lastName');
-    $obj->set_rule(array('required' => array('error', 'Last Name is required.')));            
+    $obj->set_rule(array('required' => array('error', 'Last Name is required.')));
 
     //***************************************************************
     //***************************************************************
@@ -85,47 +84,14 @@
     $obj = $form->add('textarea', 'coverLetter');
     $obj->set_rule(array(
         'required'  => array('error', 'Cover Letter is required.'),
-        'length'    => array(500, 0, 'error', 'Minimum length is 500 characters!', true),
+        'length'    => array(1, 0, 'error', 'Minimum length is 500 characters!', true),
     ));
 
     // Submit button
     $form->add('submit', 'btnsubmit', 'Submit');
 
     // Validate the form
-    if ($form->validate()) {
-        /*
-        $mail = new PHPMailer;
+    if ($form->validate()) $submitResumeForm->sendFormToEmail($_POST, 'submitResume', $form->file_upload['fileResume']);
+    else $form->render('templates/submitResume.php');
 
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'user@example.com';                 // SMTP username
-        $mail->Password = 'secret';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
-
-        $mail->From = 'from@example.com';
-        $mail->FromName = 'Mailer';
-        $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-        $mail->addAddress('ellen@example.com');               // Name is optional
-        $mail->addReplyTo('info@example.com', 'Information');
-
-        $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
-        $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-        $mail->Subject = 'Resume Submission';
-        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-        if(!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-        } else {
-            echo 'Message has been sent';
-        }
-        */
-    } else
-        $form->render('templates/submitResume.php');
-
-    ?>        
+    ?>

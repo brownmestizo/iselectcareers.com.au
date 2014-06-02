@@ -3,6 +3,8 @@
 /* May 16, 2014 */
 /* brownmestizo@gmail.com */
 
+	include 'libs/phpmailer/PHPMailerAutoload.php';
+
 	class Form {
 
 		public $yesNo = '';
@@ -13,18 +15,20 @@
 
 	class iselectForm extends Form {
 
+			var $sendToPrimary = array ("person"=>'Emily Knox', "email"=>'emily@rawpixel.com.au');
+			var $sendToSecondary = array ("person"=>'Raden Sucalit', "email"=>'brownmestizo@gmail.com');
+
 			public function __construct() {
 
-	
 				$this->yesNo = array(
             		'1' => 'Yes',
-            		'2' => 'No',					
+            		'2' => 'No',
 				);
 
 				$this->delivery = array(
             		'1' => 'Online',
-            		'2' => 'Classroom',					
-				);				
+            		'2' => 'Classroom',
+				);
 
 				$this->state = array(
 					  '8' => 'Australian Capital Territory',
@@ -265,6 +269,59 @@
 					"225"=>"Zambia",
 					"226"=>"Zimbabwe"
 				);
+			}
+
+			public function sendFormToEmail ($form, $categoryEmail, $fileUpload = null) {
+
+	            $fullName = $_POST['firstName'] . " " . $_POST['lastName'];
+
+				switch ($categoryEmail) {
+					case 'contact':
+						$subject = 'Contact Form';
+						break;
+					case 'submitResume':
+						$subject = 'Submit Resume Form';
+						break;
+					case 'joinUs':
+						$subject = 'Join Us Form';
+						break;
+				}
+
+	            $message =  "<p>This email has been sent using the iSelectCareers form. </p>";
+	            $message .= '<table class="results"><thead><tr><td colspan="2">Submitted values</td></tr></thead>';
+	                foreach ($form as $key => $value) {
+	                    if (strpos($key, 'name_') !== 0 && strpos($key, 'timer_') !== 0 && strpos($key, 'response_') !== 0)
+	                        $message .= '<tr><th align="left">' . $key . '</th><td>' . (is_array($value) ? '<pre>' . print_r($value, true) . '</pre>' : $value) . '</td></tr>';
+	                }
+	            $message .= '</table>';
+
+	            $mail = new PHPMailer();
+
+	            $mail->isSMTP();
+	            $mail->SMTPDebug = 2;
+	            $mail->Debugoutput = 'html';
+	            $mail->Host = 'mail.iselectcareers.com.au';
+	            $mail->Port = 587;
+	            $mail->SMTPAuth = true;
+	            $mail->Username = "email@iselectcareers.com.au";
+	            $mail->Password = "rp?Wz%Q(P+y%";
+
+	            $mail->setFrom($_POST['emailAddress'], $fullName);
+	            $mail->addAddress($this->sendToPrimary['email'], $this->sendToPrimary['person']);
+	            $mail->addCC($this->sendToSecondary['email']);
+	            $mail->Subject = $subject.' - '.$fullName; //Set the subject line
+
+	            $mail->Body = $message;
+	            $mail->AltBody = 'This is a plain-text message body';
+				$mail->addAttachment($fileUpload['path'].$fileUpload['file_name']);
+				//print_r($fileUpload['path'].$fileUpload['file_name']);
+
+	            if (!$mail->send()) {
+	                header("Location: error.html"); die();
+	            } else {
+	                header("Location: thankyou.php"); die();
+	            }
+
 
 
 			}

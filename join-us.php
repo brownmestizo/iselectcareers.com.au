@@ -6,7 +6,6 @@
     error_reporting(E_ERROR | E_PARSE);
     //ini_set('display_errors', 1);
     require 'libs/form/Zebra_Form.php';
-    require 'libs/phpmailer/PHPMailerAutoload.php';
     require 'model/iselect_modelForm.php';
 
     // instantiate two objects
@@ -80,7 +79,7 @@
     $obj = $form->add('textarea', 'reasonUndertakeStudy');
     $obj->set_rule(array(
         'required'  => array('error', 'Your reason to undertake study is needed.'),        
-        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
+        'length'    => array(1, 0, 'error', 'Minimum length is 50 characters!', true),
     ));
 
     // The type of job you would like to obtain after completing your studies
@@ -88,7 +87,7 @@
     $obj = $form->add('textarea', 'typeOfJob');
     $obj->set_rule(array(
         'required'  => array('error', 'The type of job you like to obtain after your studies is needed.'),        
-        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
+        'length'    => array(1, 0, 'error', 'Minimum length is 50 characters!', true),
     ));    
 
     // Course/s you are interested in 
@@ -96,7 +95,7 @@
     $obj = $form->add('textarea', 'coursesInterestedIn');
     $obj->set_rule(array(
         'required'  => array('error', 'Your list of interested courses is needed.'),        
-        'length'    => array(50, 0, 'error', 'Minimum length is 50 characters!', true),
+        'length'    => array(1, 0, 'error', 'Minimum length is 50 characters!', true),
     ));        
 
     // Preferred mode of delivery
@@ -111,8 +110,7 @@
     $form->add('submit', 'btnsubmit', 'Submit');
 
     // Validate the form
-    if ($form->validate()) {
-    } else
-        $form->render('templates/joinUs.php');
+    if ($form->validate()) $submitResumeForm->sendFormToEmail($_POST, 'joinUs');
+    else $form->render('templates/joinUs.php');
 
     ?>        
