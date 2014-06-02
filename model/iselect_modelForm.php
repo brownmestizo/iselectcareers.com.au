@@ -315,7 +315,7 @@
 	            $mail->isSMTP();
 	            $mail->SMTPDebug = 2;
 	            $mail->Debugoutput = 'html';
-	            $mail->Host = 'localhost';
+	            $mail->Host = 'mail.iselectcareers.com.au';
 	            $mail->Port = 587;
 	            $mail->SMTPAuth = true;
 	            $mail->Username = "email@iselectcareers.com.au";
