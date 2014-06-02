@@ -328,7 +328,7 @@
 
 	            $mail->Body = $message;
 	            $mail->AltBody = 'This is a plain-text message body';
-				$mail->addAttachment($fileUpload['path'].$fileUpload['file_name']);
+	            if ($fileUpload) $mail->addAttachment($fileUpload['path'].$fileUpload['file_name']);
 				//print_r($fileUpload['path'].$fileUpload['file_name']);
 
 	            if (!$mail->send()) {
