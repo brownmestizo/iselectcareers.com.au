@@ -313,8 +313,8 @@
 	            $mail = new PHPMailer();
 
 	            $mail->isSMTP();
-	            $mail->SMTPDebug = 2;
-	            $mail->Debugoutput = 'html';
+	            //$mail->SMTPDebug = 2;
+	            //$mail->Debugoutput = 'html';
 	            $mail->Host = 'mail.iselectcareers.com.au';
 	            $mail->Port = 587;
 	            $mail->SMTPAuth = true;
