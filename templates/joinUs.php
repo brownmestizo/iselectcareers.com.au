@@ -89,11 +89,6 @@
                     removes the bottom border which is otherwise present for any row -->
                     <div class="row last"><?php echo $btnsubmit?></div>
             </div>
-
-
-            <div class="content_right">
-              <p>Come and join iSelectCareers</p>
-            </div>
         </div>
 
 

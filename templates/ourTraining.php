@@ -90,11 +90,6 @@
                     removes the bottom border which is otherwise present for any row -->
                     <div class="row last"><?php echo $btnsubmit?></div>
             </div>
-
-
-            <div class="content_right">
-              <p>iSelectCareers Will Help You Find Your Dream Job
-            </div>
         </div>
 
 

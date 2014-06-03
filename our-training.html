@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Our training at iSelect Careers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
+<meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<script src="js/lib/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.index.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="menu"> <a href="index.html"><img src="images/iselect-logo.png" width="186" height="112" alt=""/></a>
+  <ul>
+    <li class="one"><a href="index.html">Our Expertise</a></li>
+    <li class="two"><a href="join-us.html">Join Us </a></li>
+    <li class="three"><a href="our-training.html">Our Training</a></li>
+    <li class="four"><a href="your-career.html">Your Career</a></li>
+    <li class="two"><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<div class="content_left">
+  <p class="button_purple five"><a href="http://avli.com.au/ist">Apply now</a></p>
+ <p class="button_green one"><a href="submit-resume.html">Submit resume</a></p>
+  <p class="button_green two"><a href="job-alerts.html">Job alerts</a></p>
+  <p class="button_green four"><a href="job-board.html">Job board</a></p>
+  <img src="images/search.png" align="left" />
+  </p>
+</div>
+<div class="content_wrap training">
+  <div class="content_middle">
+    <h1>Our Training</h1>
+    <h2>Partnering with RTOs across Australia</h2>
+    <p>At iSelectCareers we  partners with leading Registered  Training Organisations and colleges across Australia in order to provide the best course  option increase your employment opportunities.</p>
+    <p>The qualifications are online, interactive and  streamlined, allowing you to move through your course efficiently and achieving  your qualification with ease.    </p>
+    <p>The  most popular funding options is <a href="http://avli.com.au/isc" target="_blank">Vet FEE-HELP</a> and it enables you to enrol in a <a href="http://avli.com.au/isc" target="_blank">Diploma  qualification with no money outlay!</a>    </p>
+    <p>Our  advisors will review your request and will provide detailed information on the best qualification,  funding options and potential career outcomes.</p>
+<form id="theForm" method="post" action="join.php" onsubmit="return validate_form();" enctype="multipart/form-data">
+      <input name="formname" type="hidden" value="Join us - iSelectCareers website" />
+      <table border="0" cellspacing="5" cellpadding="0" >
+        <tr>
+          <td><p>First name:</p></td>
+          <td><input type="text" name="firstname" id="firstname" title="Please enter your first name" value="" /></td>
+          <td><p>Last name:</p></td>
+          <td><input type="text" name="lastname" id="lastname" title="Please enter your last name" value="" /></td>
+        </tr>
+        <tr>
+          <td><p>Mobile number:</p></td>
+          <td><input type="text" name="phone" id="phone" title="Please enter your telephone number (must be at least 10 digits)" value="" /></td>
+          <td><p>Email address:</p></td>
+          <td><input type="text" name="emailaddress" id="emailaddress" title="Email address" value="" /></td>
+        </tr>
+        <tr>
+        <td ><p>Your state:</p></td>
+        <td><select name="state"  id="state" title="Please select a state">
+          <option value="">Please select a state</option>
+          <option>NSW</option>
+          <option>QLD</option>
+          <option>VIC</option>
+          <option>SA</option>
+          <option>WA</option>
+          <option>NT</option>
+          <option>TAS</option>
+          <option>ACT</option>
+        </select></td>
+        <td><p>Do you require assistance with your  jobsearching?</p></td>
+        <td><select name="requireassistance" id="requireassistance"/>
+        
+          <option value="Select">Please select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option></td>
+      </tr>
+        <tr>
+          <td><p>Your reason for wanting to undertake  additional study:</p></td>
+          <td><textarea name="studyreason" rows="3" id="studyreason" title="Your reason for wanting to undertake additional study"></textarea></td>
+          <td><p>The type of job you would like to  obtain after completing your studies:</p></td>
+          <td><textarea name="job" rows="3" id="job" title="The type of job you would like to  obtain after completing your studies"></textarea></td>
+        </tr>
+        <tr>
+          <td><p>Preferred delivery mode:</p></td>
+          <td><select name="deliverymode" id="deliverymode">
+              <option value="Select">Please select</option>
+              <option value="Online">Online</option>
+              <option value="Classroom">Classroom</option>
+            </select></td>
+          <td><p>Course/s you are interested in:</p></td>
+          <td><textarea name="courseinterest" rows="3" id="courseinterest" title="Courses you are interested in"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3"><input name="submit" id="submit" type="submit" value="Submit"  class="submit" align="right" /></td>
+        </tr>
+      </table>
+  </form>
+  </div>
+
+</div>
+<div class="clear"></div>
+<div class="footer">
+  <p align="center">Copyright 2014 iSelectCareers</p>
+</div>
+<div id='laPlaceholder'></div>
+<script type="text/javascript"> 
+(function(d,t) { 
+var script = d.createElement(t); script.id = 'la_x2s6df8d'; script.async = true; 
+script.src = '//trainer.aot.edu.au/scripts/track.js'; 
+var image = d.createElement('img'); script.async = true; 
+image.src = '//trainer.aot.edu.au/scripts/pix.gif'; 
+image.style.position = 'absolute'; 
+script.onload = script.onreadystatechange = function() { 
+var rs = this.readyState; if (rs && (rs != 'complete') && (rs != 'loaded')) return; 
+LiveAgentTracker.createButton('b12d72f7', this); 
+}; 
+var placeholder = document.getElementById('laPlaceholder'); 
+placeholder.parentNode.insertBefore(script, placeholder); 
+placeholder.parentNode.insertBefore(image, placeholder); 
+placeholder.parentNode.removeChild(placeholder); 
+})(document, 'script'); 
+</script>
+</body>
+</html>
