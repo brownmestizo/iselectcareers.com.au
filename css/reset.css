@@ -9,7 +9,7 @@ hr { border: 0px solid #ccc; height: 1px; background: #ccc}
 a { text-decoration: none;}
 a:active, a:focus { outline: 0; outline-style: none; outline-width: 0;}
 
-ul, li { padding: 0; margin: 0; list-style: disc;  margin-left: 10px; text-align: justify; font-size: 1em;}
+ul, li { padding: 0; margin: 0 3px; list-style: disc; text-align: justify;}
 ol, ol li { list-style: decimal; font-size: 14px;}
 a img { border: 0;}
 .clear { clear: both;}

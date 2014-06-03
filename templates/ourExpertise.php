@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Contact iSelect Careers</title>
+        <title>Our Expertise - iSelect Careers</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -12,14 +12,14 @@
         <script src="js/lib/jquery-1.9.0.min.js" type="text/javascript"></script>
         <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
         <script src="js/jquery.index.js" type="text/javascript"></script>
-    </head>    
+    </head>
 
     <body>
 
         <div id="menu">
             <a href="index.html"><img src="images/iselect-logo.png" width="186" height="112" alt=""/></a>
                 <ul>
-                    <li class="one"><a href="our-expertise.html">Our Expertise</a></li>
+                    <li class="one"><a href="index.html">Our Expertise</a></li>
                     <li class="two"><a href="join-us.php">Join Us </a></li>
                     <li class="three"><a href="our-training.php">Our Training</a></li>
                     <li class="four"><a href="your-career.php">Your Career</a></li>
@@ -36,41 +36,19 @@
         </div>
 
 
-        <div class="content_wrap contact">
-            <div class="content_middle">
-                <h1>iSelectCareers</h1>
-         		<h2>Contact Us</h2>
 
-                <?php
-                    echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
-                ?>
-
-                    <div class="row">
-                        <div class="cell"><?php echo $label_firstName . $firstName?></div>
-                        <div class="cell"><?php echo $label_lastName . $lastName?></div>
-                    </div>
-
-                    <div class="row even">    
-                        <div class="cell"><?php echo $label_emailAddress . $emailAddress . $note_emailAddress; ?></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="cell"><?php echo $label_contactNumber . $contactNumber . $note_contactNumber; ?></div>
-                    </div>
-
-                    <div class="row even">    
-                        <div class="cell"><?php echo $label_state . $state; ?></div>
-                    </div>
-
-                    <div class="row">    
-                        <div class="cell"><?php echo $label_message . $message; ?></div>
-                    </div>
-
-                    <!-- the submit button goes in the last row; also, notice the "last" class which
-                    removes the bottom border which is otherwise present for any row -->
-                    <div class="row last"><?php echo $btnsubmit?></div>
-            </div>
-        </div>
+        <div class="content_wrap home">
+<div class="content_middle">
+  <h1>iSelectCareers</h1>
+  <h2>Our Expertise </h2>
+  <p>iSelectCareers is a dynamic cutting edge recruitment and career group. </p>
+  <p>We offer a <strong>FREE</strong> Partnership program for business and companies  wanting to employ talented qualified staff. We offer a FREE Partnership program for business and companies wanting to employ talented qualified staff.</p>
+  <p>As part of this partnership, we do not  merely present candidates from a database search or an advertisement response. We use a   combination of strategies, from in-house research, leads from the  press and publications, social networking media and job boards. </p>
+  <p>At iSelectCareers we aim to to providing our partners with 6 of the highest quality candidates for every role. We save our partners time   and  money by screening every candidate first.</p>
+  <p>iSelectCareers  is a premium employment and recruitment  service   with an added bonus – we remove all the  stress and costs to you!</p>
+  <p><img src="images/trio.png" width="580" height="112"/></p>
+</div>
+</div>
 
 
         <div class="clear"></div>
