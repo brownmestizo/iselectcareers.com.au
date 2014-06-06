@@ -60,8 +60,8 @@
                 <p>They  will do everything from helping create an impressive CV to working with you on  successful interview techniques. Then our Career Chasers will chase the jobs  that will allow you to shine in the area you're passionate about, set yourself  apart from the competition and build a successful career.</p>
                 <p>With  have years of experience in the education sector and our extensive knowledge  and contacts in the job market. We have many companies that train their staff  with us, that also come to us to advertise their</p>
                 <p>jobs  through our student database, we are the link between students, education  providers and employers. </p>
-                <p>Companies  know that students enrolled in our courses are going to be focused and  proactive in their employment. As our strategies are very personalised we have  to limit the numbers of people that the Career Coaches work with. </p>
-<h3>Free online career self-assessment</h3>
+              <p>Companies  know that students enrolled in our courses are going to be focused and  proactive in their employment. As our strategies are very personalised we have  to limit the numbers of people that the Career Coaches work with. </p>
+              <h2>Free online career self-assessment</h2>
 
                 <?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
