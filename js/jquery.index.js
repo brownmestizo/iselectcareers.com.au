@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
   $('#menu li').hover(function() {
-      $(this).stop().animate({ paddingBottom: '80px' },200,'easeOutCirc');
+      $(this).stop().animate({ paddingBottom: '35px' },400,'easeOutCirc');
   }, function() {
-      $(this).stop().animate({ paddingBottom: '50px' },500,'easeOutBounce');
+      $(this).stop().animate({ paddingBottom: '10px' },400,'easeOutBounce');
   });
 
 });

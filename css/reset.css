@@ -1,26 +1,15 @@
-body { padding: 0; margin: 0; font-family: Calibri, Tahoma, Arial, Helvetica, sans-serif; font-size:1em;}
-input, select, textarea { font-family: Calibri, Tahoma, Arial, Sans-serif !important;}
-input:hover, select:hover, textarea:hover { cursor: pointer;}
+html { overflow-y: scroll;}
+body { padding: 0; margin: 0; font-family: Calibri, Tahoma, Arial, Helvetica, sans-serif; font-size:16px;color: #656565;}
+a:hover { cursor: pointer;}
 
 /*--------------------------*/
 /* Utility Classes          */
 /*--------------------------*/
 hr { border: 0px solid #ccc; height: 1px; background: #ccc}
 a { text-decoration: none;}
-a:active, a:focus { outline: 0; outline-style: none; outline-width: 0;}
-
-ul, li { padding: 0; margin: 0 3px; list-style: disc; text-align: justify;}
-ol, ol li { list-style: decimal; font-size: 14px;}
-a img { border: 0;}
+ol, ol li { list-style: decimal; font-size: 16px;color: #656565;}
+ul, ul li { font-size: 16px;color: #656565;}
+a img {	border: 0;}
 .clear { clear: both;}
 .clear:after { content:"."; height:1px; display:block; clear:both; visibility:hidden;}
-
-p { text-align: justify;}
-
-/*--------------------------*/
-
 .clearbutton { /* generic container (i.e. div) for floating buttons */overflow: hidden; width: 100%;}
-a.button { /*display: block; float: left; height: 37px; margin-right: 6px; padding-right: 18px !important; */ /* sliding doors padding */ /*text-decoration: none; */}
-a.button { /*font-size: 14px; color: #fff !important; width: 302px; text-align: center; */}
-a.button span { /*display: block; line-height: 37px; padding: 0px 0 5px 18px;*/}
-a:hover { /*color: #000 !important; */}

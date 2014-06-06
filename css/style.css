@@ -3,6 +3,11 @@ body {
 	font-family: Calibri, Tahoma, Arial, Sans-serif;
 	font-size:1em;
 }
+#bodywrap {
+	margin: 0 auto;
+	width:1150px;
+}
+
 .alt {
 	background:#FFFFCC;
 }
@@ -20,64 +25,47 @@ body {
 	font-size: 12px;
 	text-align: center;
 }
-.content_left {
-	width: 250px;
-	float: left;
-	margin-top: 30px;
-}
+
 .content_wrap {
-	width: 862px;
-	min-height: 700px;
-	float: left;
-	position:absolute;
-	top:128px;
-	left:249px;
+	min-height: 550px;
+	position:relative;
+	left: 40px;
 	padding-bottom:70px;
-	height: 693px;
+	width:870px;
+	float:left;
+	height: 100%;
+	margin-bottom:0;
 }
 .content_middle {
 	padding-right: 5px;
 	padding-bottom: 5px;
 	color: #042707;
 	width: 65%;
+	
 }
 .content_middle p {
 	padding-bottom: 0.2em;
 	font-size: 16px;
 	color: #656565;
 }
-.content_right {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	width: 260px;
-	float: right;
+
+.home {	background: url(../images/index.jpg) top right no-repeat;}
+.resume {	background: url(../images/resume.jpg) top right no-repeat;}
+.join {	background: url(../images/join.jpg) top right no-repeat;}
+.career {background: url(../images/career.jpg) top right no-repeat;}
+.training {background: url(../images/training.jpg) top right no-repeat;}
+.contact {background: url(../images/contact.jpg) top right no-repeat;}
+.thanks {background: url(../images/thanks.gif) bottom right no-repeat;}
+.finance {background: url(../images/finance.jpg) top right no-repeat;}
+.coming {background: url(../images/coming.jpg) top right no-repeat;}
+
+.coming h1 {
+
+	padding:50px;
 }
-.content_right p {
-	font-size: 2em;
-	color: #B0049F;
-	font-family: 'Fauna One', serif;
-	text-align: right;
-}
-.home {
-	background: url(../images/index.jpg) top right no-repeat;
-}
-.resume {
-	background: url(../images/resume.jpg) top right no-repeat;
-}
-.join {
-	background: url(../images/join.jpg) top right no-repeat;
-}
-.career {
-	background: url(../images/career.jpg) top right no-repeat;
-}
-.training {
-	background: url(../images/training.jpg) top right no-repeat;
-}
-.contact {
-	background: url(../images/contact.jpg) top right no-repeat;
-}
-.thanks {
-	background: url(../images/thanks.gif) bottom right no-repeat;
+.coming h2 {
+	padding:50px;
+	font-size:70px;
 }
 .content_contact {
 	margin-left: 250px;
@@ -116,108 +104,110 @@ span.reference a {
 span.reference a:hover {
 	color:#ddd;
 }
-.button_green, .button_purple {
-	text-indent: 0;
-	display: inline-block;
+
+/*****************************left menu******************************/
+.content_left {
+	float:left;
+	width:220px;
 	float: left;
-	margin: 0 10px 20px 10px;
-	color: #ffffff !important;
-	font-family: calibri, arial, sans-serif;
+	margin-top: 10px;
+	height:100%;
+	margin-bottom:0;
+	padding-bottom:0;
+}	
+
+.button_green p{
+    
+    display: block;
+    margin: 10px 5px;
+    text-align: center;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+
+.button_green a{
+    color: #FFFFFF;
+    text-decoration: none;
 	font-size: 20px;
-	text-transform: uppercase;
-	width: 180px;
-	line-height: 40px;
-	text-align: center;
-	padding: 0 15px;
-	text-decoration: none;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+    line-height: 40px;
+	border-radius: 5px;
+    display: block;
+	font-weight:bold;
+    text-indent: 10px;
+    text-transform: uppercase;
+}
+
+.button_green:hover {
+	cursor:pointer;
+
+}
+
+.but_highlight {
+    background: url("../images/but_highlight.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    box-shadow: 0 0 2px #4D69B1;
 	border-radius: 5px;
 }
-.button_green a, .button_purple a {
-	text-decoration:none;
-	color:#FFFFFF;
-}
-.button_green:hover {
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #343B97;
-	box-shadow: 0px 0px 2px #343B97;
-background-image: -ms-linear-gradient(top, #0082DD 0%, #075992 100%);
-background-image: -moz-linear-gradient(top, #0082DD 0%, #075992 100%);
-background-image: -o-linear-gradient(top, #0082DD 0%, #075992 100%);
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0082DD), color-stop(1, #075992));
-background-image: -webkit-linear-gradient(top, #0082DD 0%, #075992 100%);
-background-image: linear-gradient(to bottom, #0082DD 0%, #075992 100%);
-	text-indent: 0;
-}
-.button_purple:hover {
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #921357;
-	box-shadow: 0px 0px 2px #921357;
-background-image: -ms-linear-gradient(bottom, #8D066F 0%, #D409A7 100%);
-background-image: -moz-linear-gradient(bottom, #8D066F 0%, #D409A7 100%);
-background-image: -o-linear-gradient(bottom, #8D066F 0%, #D409A7 100%);
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #8D066F), color-stop(1, #D409A7));
-background-image: -webkit-linear-gradient(bottom, #8D066F 0%, #D409A7 100%);
-background-image: linear-gradient(to top, #8D066F 0%, #D409A7 100%);
-	text-indent: 0;
-}
-.but_highlight {
-	background:url(../images/but_highlight.gif) top no-repeat;
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #921357;
-	box-shadow: 0px 0px 2px #4d69b1;
-}
 .but1 {
-	background:url(../images/but1.gif) top no-repeat;
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #0082dd;
-	box-shadow: 0px 0px 2px #0082dd;
+    background: url("../images/but1.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    box-shadow: 0 0 2px #0082DD;
+	border-radius: 5px;
 }
 .but2 {
-	background:url(../images/but2.gif) top no-repeat;
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #075992;
-	box-shadow: 0px 0px 2px #075992;
+    background: url("../images/but2.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    box-shadow: 0 0 2px #075992;
+	border-radius: 5px;
 }
 .but3 {
-	background:url(../images/but3.gif) top no-repeat;
-	-moz-box-shadow: 0px 0px 2px #000 inset;
-	-webkit-box-shadow: 0px 0px 2px #075992;
-	box-shadow: 0px 0px 2px #075992;
+    background: url("../images/but3.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    box-shadow: 0 0 2px #075992;
+	border-radius: 5px;
 }
+
+/******************* menu ************************/
 #menu {
 	padding-right: 5px;
 	padding-left: 5px;
-	height: 120px;
-	width: 1000px;
+	height: 140px;
 }
 #menu ul {
 	position: relative;
-	left: 260px;
-	top: -115px;
-	height:120px;
+	left: 240px;
+	top: -76px;
 }
 #menu li {
-	margin-right: 1px;
-	padding: 15px 5px 50px 5px;
+	margin: 0 2px;
 	display: inline;
-	height:60px;
-}
-
+	padding: 70px 15px 10px 15px;
+	}
 #menu li a {
 	text-decoration:none;
 	display:inline;
-	padding: 20px 12px;
 	color:#FFF;
 	font-family: calibri, arial, sans-serif;
 	font-size:22px;
 	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#menu li a:hover {
+	opacity:0.8;
+	text-shadow:2px 2px #000033;
+}
+
+.content_left a:hover {
+	opacity:0.8;
+	text-shadow:1px 1px #000033;
+}
+
+#menu li.active a {
+	color:#44C5E3;
+}
+
+.content_left .active a{
+	color:#44C5E3;
 }
 .one {
 	background:url(../images/MENU_01.gif) top no-repeat #0082dd;
-	width:185px;
-	padding-bottom:40px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
@@ -230,7 +220,6 @@ background-image: linear-gradient(to top, #8D066F 0%, #D409A7 100%);
 }
 .two {
 	background:url(../images/MENU_02.gif) top no-repeat #075992;
-	width:113px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
@@ -243,7 +232,6 @@ background-image: linear-gradient(to top, #8D066F 0%, #D409A7 100%);
 }
 .three {
 	background:url(../images/MENU_03.gif) top no-repeat #003A63;
-	width:177px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
@@ -256,7 +244,6 @@ background-image: linear-gradient(to top, #8D066F 0%, #D409A7 100%);
 }
 .four {
 	background:url(../images/MENU_04.gif) top no-repeat #075992;
-	width:168px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
@@ -269,7 +256,6 @@ background-image: linear-gradient(to top, #8D066F 0%, #D409A7 100%);
 }
 .five {
 	background:url(../images/MENU_05.gif) top no-repeat #0082dd;
-	width:158px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;

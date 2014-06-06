@@ -15,23 +15,25 @@
     </head>    
 
     <body>
+<div id="bodywrap">
 
         <div id="menu">
             <a href="index.html"><img src="images/iselect-logo.png"  alt="iSelectCareers"/></a>
                 <ul>
-                    <li class="one"><a href="our-expertise.html">Our Expertise</a></li>
-                    <li class="two"><a href="join-us.php">Join Us </a></li>
-                    <li class="three"><a href="our-training.php">Our Training</a></li>
-                    <li class="four"><a href="your-career.php">Your Career</a></li>
-                    <li class="two"><a href="contact-us.php">Contact Us</a></li>
-                </ul>
+    <li class="one"><a href="our-expertise.html">Our Expertise</a></li>
+    <li class="two"><a href="join-us.php">Our Assistance</a></li>
+    <li class="three"><a href="our-training.php">Our Training</a></li>
+    <li class="four"><a href="your-career.php">Your Career</a></li>
+    <li class="five"><a href="contact-us.php">Contact Us</a></li>                </ul>
         </div>
 
         <div class="content_left">
-  <p class="button_purple but_highlight"><a href="http://avli.com.au/ist">Apply now</a></p>
-  <p class="button_green but1"><a href="submit-resume.php">Submit resume</a></p>
-  <p class="button_green but3"><a href="job-alerts.html">Job alerts</a></p>
-  <p class="button_green but2"><a href="job-board.html">Job board</a></p>
+ 	<p class="button_green but1"><a href="job-board.html">Job board</a></p>
+    <p class="button_green but2"><a href="submit-resume.php">Submit resume</a></p>
+    <p class="button_green but_highlight"><a href="http://avli.com.au/ist">Apply now</a></p>
+    <p class="button_green but2"><a href="employers.php">Employers</a></p>
+    <p class="button_green but3"><a href="financial-assistance.html">Financial assistance</a></p>
+    <p class="button_green but1"><a href="job-alerts.html">Job alerts</a></p>
             <p><img src="images/search.png" align="left" /></p>
         </div>
 

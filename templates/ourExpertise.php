@@ -19,7 +19,7 @@
         <div id="menu">
             <a href="index.html"><img src="images/iselect-logo.png"  alt="iSelectCareers"/></a>
                 <ul>
-                    <li class="one"><a href="index.html">Our Expertise</a></li>
+                    <li class="one active"><a href="index.html">Our Expertise</a></li>
                     <li class="two"><a href="join-us.php">Join Us </a></li>
                     <li class="three"><a href="our-training.php">Our Training</a></li>
                     <li class="four"><a href="your-career.php">Your Career</a></li>

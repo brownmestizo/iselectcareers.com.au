@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Join us - iSelect Careers</title>
+<title>Employers - iSelect Careers</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -31,18 +31,22 @@
     <p class="button_green but2"><a href="employers.php">Employers</a></p>
     <p class="button_green but3"><a href="financial-assistance.html">Financial assistance</a></p>
     <p class="button_green but1"><a href="job-alerts.html">Job alerts</a></p>
+    <p><img src="images/search.png" align="left" /></p>
   </div>
   <div class="content_wrap join">
     <div class="content_middle">
-      <h1>Our assistance</h1>
-      <h2>How we help?</h2>
-      <p>We  give you access to proven strategies by working in partnership with our Career  Coaches to assist you by putting you on top of the competition to achieve your  desired career goals.      </p>
-      <p>Our  iSelect Career Coaches offer  guidance and suggestions on moving forward  with your career and employment.  This is  a free service to assist individuals to update resumes, cover letters,  interview techniques and up skilling Australians.      </p>
-      <p>We do  this by gaining an understanding of where your skills lie, delivering the  education to fill skill-gaps, and by providing career guidance and job  placement support.      </p>
-      <p>The  current job market is competitive and many employers ( even within lower level  jobs available) are requesting qualifications as a pre-requisite, so an areas  we focus on is funded qualifications with no money outlay, so you can add a  qualification to your resume instantly.       </p>
-      <p>If  you're looking to take the next step in your career or to find employment,  furthering your education utilising our  career guidance and job placement support is a great opportunity.      </p>
-      <p>When  it comes to gainign qualifications, updating resumes and  job placement, your iSelect Career Coach is here is to get you success!</p>
-<?php
+      <h1>Employers</h1>
+      <h2>Register a vacancy or job</h2>
+      <p>Please  use the form to submit your vacancy. </p>
+      <p>We  will actively source potential  candidates through our existing job  seekers  and students </p>
+      <h3>What we will do for you:</h3>
+      <ul>
+        <li>Interview and screen ideal candidates</li>
+        <li>Advertise and promote the job through  our network.</li>
+      </ul>
+      <p>Our focus is to ensure that our  candidates have been upskilled to an Australian National Standard ensuring you  that a candidate for iSelectCareers are the best  choice for your company.</p>
+      <p>A consultants will  be in contact. </p>
+<?php /*?><?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
                 ?>
       <div class="row">
@@ -56,28 +60,28 @@
         <div class="cell"><?php echo $label_mobileNumber . $mobileNumber . $note_mobileNumber; ?></div>
       </div>
       <div class="row even">
-        <div class="cell"><?php echo $label_state . $state; ?></div>
+        <div class="cell"><?php echo $label_company . $company; ?></div>
       </div>
       <div class="row">
-        <div class="cell"><?php echo $label_requireAssistanceJobSearch . $requireAssistanceJobSearch; ?></div>
+        <div class="cell"><?php echo $label_position . $position; ?></div>
       </div>
       <div class="row even">
-        <div class="cell"><?php echo $label_reasonUndertakeStudy . $reasonUndertakeStudy; ?></div>
+        <div class="cell"><?php echo $label_salary . $salary; ?></div>
       </div>
-      <div class="row">
-        <div class="cell"><?php echo $label_typeOfJob . $typeOfJob; ?></div>
+      <div class="row ">
+        <div class="cell"><?php echo $label_startdate . $startdate; ?></div>
       </div>
       <div class="row even">
-        <div class="cell"><?php echo $label_coursesInterestedIn . $coursesInterestedIn; ?></div>
+        <div class="cell"><?php echo $label_fullpart . $fullpart; ?></div>
       </div>
-      <div class="row">
-        <div class="cell"><?php echo $label_delivery . $delivery; ?></div>
+      <div class="row">    
+       <div class="cell"><?php echo $label_fileResume . $fileResume; ?></div>
       </div>
       
       <!-- the submit button goes in the last row; also, notice the "last" class which
                     removes the bottom border which is otherwise present for any row -->
       <div class="row last"><?php echo $btnsubmit?></div>
-    </div>
+    </div<?php */?>
   </div>
   <div class="clear"></div>
 </div>

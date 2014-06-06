@@ -17,23 +17,26 @@
     </head>
 
     <body>
+    <div id="bodywrap">
 
         <div id="menu">
             <a href="index.html"><img src="images/iselect-logo.png"  alt="iSelectCareers"/></a>
                 <ul>
-                    <li class="one"><a href="our-expertise.html">Our Expertise</a></li>
-                    <li class="two"><a href="join-us.php">Join Us </a></li>
-                    <li class="three"><a href="our-training.php">Our Training</a></li>
-                    <li class="four"><a href="your-career.php">Your Career</a></li>
-                    <li class="two"><a href="contact-us.php">Contact Us</a></li>
+    <li class="one"><a href="our-expertise.html">Our Expertise</a></li>
+    <li class="two"><a href="join-us.php">Our Assistance</a></li>
+    <li class="three"><a href="our-training.php">Our Training</a></li>
+    <li class="four"><a href="your-career.php">Your Career</a></li>
+    <li class="five"><a href="contact-us.php">Contact Us</a></li>
                 </ul>
         </div>
 
         <div class="content_left">
-  <p class="button_purple but_highlight"><a href="http://avli.com.au/ist">Apply now</a></p>
-  <p class="button_green but1"><a href="submit-resume.php">Submit resume</a></p>
-  <p class="button_green but3"><a href="job-alerts.html">Job alerts</a></p>
-  <p class="button_green but2"><a href="job-board.html">Job board</a></p>
+ 	<p class="button_green but1"><a href="job-board.html">Job board</a></p>
+    <p class="button_green but2"><a href="submit-resume.php">Submit resume</a></p>
+    <p class="button_green but_highlight"><a href="http://avli.com.au/ist">Apply now</a></p>
+    <p class="button_green but2"><a href="employers.php">Employers</a></p>
+    <p class="button_green but3"><a href="financial-assistance.html">Financial assistance</a></p>
+    <p class="button_green but1"><a href="job-alerts.html">Job alerts</a></p>
             <p><img src="images/search.png" align="left" /></p>
         </div>
 
@@ -51,10 +54,14 @@
                   <li>Do you lack the time and resources to understand how the local job  market operates? </li>
                 </ul>
                 <h3>How we help?</h3>
-                <p>We give you access to proven strategies by working in partnership with  our Career Coaches to assist you by putting you on top of the competition to  achieve your desired career goals. Everyone has different needs and time  constraint so we are very flexible in our approach and can provide you with  full solutions or targeted career plan for your specific requirements.</p>
-                <p>As our strategies are very personalised we have to limit the  numbers of people that the Career Coaches work with. </p>
-
-                <h3>Free online career self-assessment</h3>
+                <p>We  are a leading education and employment organisation dedicated to bringing out  the best in people. We believe the way to a better life is through  self-improvement and learning. Our goal is to help you achieve yours.</p>
+                <p>Our  Career Choaches will be with you every step of the way. </p>
+                <p>They'll  identify the right course for you and help you find the best career  opportunities possible. </p>
+                <p>They  will do everything from helping create an impressive CV to working with you on  successful interview techniques. Then our Career Chasers will chase the jobs  that will allow you to shine in the area you're passionate about, set yourself  apart from the competition and build a successful career.</p>
+                <p>With  have years of experience in the education sector and our extensive knowledge  and contacts in the job market. We have many companies that train their staff  with us, that also come to us to advertise their</p>
+                <p>jobs  through our student database, we are the link between students, education  providers and employers. </p>
+                <p>Companies  know that students enrolled in our courses are going to be focused and  proactive in their employment. As our strategies are very personalised we have  to limit the numbers of people that the Career Coaches work with. </p>
+<h3>Free online career self-assessment</h3>
 
                 <?php
                     echo (isset($zf_error) ? $zf_error : (isset($error) ? $error : ''));
@@ -77,25 +84,25 @@
                         <div class="cell"><?php echo $label_state . $state; ?></div>
                     </div>
 
-                    <div class="row even">
+                    <div class="row ">
                         <div class="cell"><?php echo $label_requireAssistanceJobSearch . $requireAssistanceJobSearch; ?></div>
                     </div>                    
 
                     <h3>Self-assessment questions</h3>
 
-                    <div class="row">
+                    <div class="row even">
                         <div class="cell"><?php echo $label_question1 . $question1; ?></div>
                     </div>
 
-                    <div class="row even">
+                    <div class="row ">
                         <div class="cell"><?php echo $label_question2 . $question2; ?></div>
                     </div>
 
-                    <div class="row">
+                    <div class="row even">
                         <div class="cell"><?php echo $label_question3 . $question3; ?></div>
                     </div>
 
-                    <div class="row even">
+                    <div class="row">
                         <div class="cell">
                             <div class="cell"><?php echo $label_question4; ?></div>
 
@@ -107,7 +114,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row even">
                         <div class="cell">
                             <div class="cell"><?php echo $label_question5; ?></div>
                             <div class="clear"></div>
@@ -162,11 +169,11 @@
                     <div class="row last"><?php echo $btnsubmit?></div>
             </div>
         </div>
-
+</div>
 
         <div class="clear"></div>
 
-
+</div>
         <div class="footer">
             <p align="center">Copyright 2014 iSelectCareers</p>
         </div>
