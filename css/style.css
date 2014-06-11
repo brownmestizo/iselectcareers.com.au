@@ -361,3 +361,11 @@ span.reference a:hover {
 .Zebra_Form .optional {
 	display: none;
 }
+
+.clear {
+	clear: both;
+}
+
+.clear-bottom {
+	margin-bottom: 50px;
+}

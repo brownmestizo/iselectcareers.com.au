@@ -1,0 +1,98 @@
+"78fee24","knox-in-sox","Tue, 3 Jun 2014 10:25:52 +1000","Em's last change",
+ 10 files changed, 245 insertions(+), 33 deletions(-)
+
+"d6a4187","unknown","Tue, 3 Jun 2014 08:29:50 +1000","Fixed join-us.html link",
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+
+"c5c565c","unknown","Tue, 3 Jun 2014 08:24:52 +1000","Removed smtp debugging tool",
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+"ecd490a","unknown","Tue, 3 Jun 2014 08:24:19 +1000","Used iselectcareers mail server",
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+"481cd6f","unknown","Tue, 3 Jun 2014 08:21:58 +1000","Added validation to check for attachments",
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+"6a23090","unknown","Tue, 3 Jun 2014 08:19:15 +1000","Changed host for phpmailer",
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+"553a704","Raden Sucalit","Mon, 2 Jun 2014 23:10:17 +1000","Added additional form. Fixed dependency problem on Your Career form.",
+ 18 files changed, 390 insertions(+), 491 deletions(-)
+
+"99dc1c4","Raden Sucalit","Mon, 2 Jun 2014 20:02:39 +1000","Integrated PHPmailer with the form framework. Used STMP to send form messages via email",
+ 13 files changed, 189 insertions(+), 384 deletions(-)
+
+"c3d8244","knox-in-sox","Fri, 30 May 2014 10:25:58 +1000","pushing what is live",
+ 3 files changed, 34 insertions(+), 32 deletions(-)
+
+"54a2685","Raden Sucalit","Wed, 28 May 2014 22:50:01 +1000","Revert to d0eb9b11643d69e4f11efdbf44de74d37121b5e1",
+ 18 files changed, 937 insertions(+), 585 deletions(-)
+
+"0b904d7","knox-in-sox","Wed, 28 May 2014 11:11:25 +1000","changed pages after reverted back",
+ 14 files changed, 282 insertions(+), 56 deletions(-)
+
+"f2f4288","unknown","Wed, 28 May 2014 11:06:08 +1000","Revert to 5af6ac1b753f6bab24d5ab35cdc712384395a774",
+ 18 files changed, 585 insertions(+), 937 deletions(-)
+
+"d0eb9b1","unknown","Wed, 28 May 2014 10:51:26 +1000","Change to mine",
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+"b05ddc1","unknown","Wed, 28 May 2014 10:48:32 +1000","Attempt to email results",
+ 1 file changed, 77 insertions(+)
+
+"7e19ef5","knox-in-sox","Wed, 28 May 2014 09:26:50 +1000","added join page",
+ 6 files changed, 233 insertions(+), 6 deletions(-)
+
+"f84b465","Raden Sucalit","Tue, 27 May 2014 19:25:42 +1000","Added two other forms",
+ 15 files changed, 424 insertions(+), 371 deletions(-)
+
+"4513ef9","Raden Sucalit","Tue, 27 May 2014 19:03:11 +1000","Fixed the sequence problem. Moved all markup to template. All logic went to the actual php file.",
+ 2 files changed, 212 insertions(+), 217 deletions(-)
+
+"e091f1f","Raden Sucalit","Tue, 27 May 2014 18:59:26 +1000","Revert to original sequence",
+ 1 file changed, 107 insertions(+), 104 deletions(-)
+
+"8cbb8c2","Raden Sucalit","Tue, 27 May 2014 18:57:27 +1000","Changed sequence of PHP blocks to check whether form will validate",
+ 1 file changed, 105 insertions(+), 108 deletions(-)
+
+"c1e64d4","Raden Sucalit","Tue, 27 May 2014 18:52:52 +1000","Changed includes to require to fix form framework non-validation problem",
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+"5af6ac1","knox-in-sox","Tue, 27 May 2014 15:45:08 +1000","alert and board coming",
+ 10 files changed, 160 insertions(+), 16 deletions(-)
+
+"f58e36d","knox-in-sox","Tue, 27 May 2014 14:39:23 +1000","other forms added",
+ 14 files changed, 704 insertions(+), 122 deletions(-)
+
+"0043a8a","Raden Sucalit","Sat, 24 May 2014 00:33:42 +1000","Removed body element from the template",
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+"e2f5603","Raden Sucalit","Sat, 24 May 2014 00:20:51 +1000","Removed js footer which may be causing js problem on submit-resume.php",
+ 1 file changed, 17 deletions(-)
+
+"8f7b94e","Raden Sucalit","Thu, 22 May 2014 00:10:26 +1000","Added phpmailer lib. Added class to form.",
+ 4 files changed, 65 insertions(+), 1 deletion(-)
+
+"dd67b41","Raden Sucalit","Wed, 21 May 2014 23:32:59 +1000","Removed composer. Switched to a submodule for the form framework.",
+ 13 files changed, 6 insertions(+), 611 deletions(-)
+
+"e814e5a","Raden Sucalit","Wed, 21 May 2014 23:03:11 +1000","Added composer. Finalised base form",
+ 13 files changed, 1070 insertions(+)
+
+"6eb24d5","knox-in-sox","Wed, 21 May 2014 17:11:05 +1000","Em end of day",
+ 5 files changed, 6 insertions(+), 34 deletions(-)
+
+"87f8581","knox-in-sox","Wed, 21 May 2014 16:52:43 +1000","Em end of day",
+ 15 files changed, 222 insertions(+), 523 deletions(-)
+
+"dd7788d","knox-in-sox","Wed, 21 May 2014 15:54:08 +1000","Em - More pages",
+ 14 files changed, 1069 insertions(+), 169 deletions(-)
+
+"3edad83","knox-in-sox","Mon, 19 May 2014 17:11:34 +1000","CSS changes by Emily",
+ 17 files changed, 323 insertions(+), 520 deletions(-)
+
+"a96f14a","brownmestizo","Sun, 18 May 2014 02:51:54 -0700","Initial commit",
+ 1 file changed, 4 insertions(+)
+
+"83a4ca6","Raden Sucalit","Sun, 18 May 2014 19:50:58 +1000","Initial commit. Files from Emily",
+ 20 files changed, 1416 insertions(+)
