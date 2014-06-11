@@ -28,7 +28,7 @@
         </div>
 
         <div class="content_left">
-  <p class="button_purple but_highlight"><a href="http://avli.com.au/ist">Apply now</a></p>
+  <p class="button_purple but_highlight"><a href="http://avli.com.au/isc">Apply now</a></p>
   <p class="button_green but1"><a href="submit-resume.php">Submit resume</a></p>
   <p class="button_green but3"><a href="job-alerts.html">Job alerts</a></p>
   <p class="button_green but2"><a href="job-board.html">Job board</a></p>
