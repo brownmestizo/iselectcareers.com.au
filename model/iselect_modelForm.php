@@ -27,7 +27,7 @@
 
 	class iselectForm extends Form {
 
-			var $sendToPrimary = array ("person"=>'Emily Knox', "email"=>'emily@rawpixel.com.au');
+			var $sendToPrimary = array ("person"=>'ISelectCareers Info', "email"=>'info@iselectcareers.com.au');
 			var $sendToSecondary = array ("person"=>'Raden Sucalit', "email"=>'brownmestizo@gmail.com');
 
 			public function __construct() {
